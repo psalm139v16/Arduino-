@@ -1,14 +1,12 @@
-// 1. We define all variables here at the top so the loop can use them
 int RledPin = 3;
 int GledPin = 4;
 int BledPin = 5;
-int buttonPin = 2; // Make sure your button is on digital pin 2
+int buttonPin = 2; 
 
 int buttonState = 0;  
 int ledcolor = 0;
 bool ButtonPressed = false; 
 
-// This is the line that was missing or broken!
 String currentcolor = "led"; 
 
 void setup() {
@@ -42,7 +40,7 @@ void loop() {
     ledcolor = 0;
   }
 
-  // --- LED COLOR MODES ---
+  // LED COLOR MODES 
   if (ledcolor == 0){
     currentcolor = "LED off";
     digitalWrite(RledPin, HIGH);
